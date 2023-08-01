@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Noto Serif', serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.blogs.content {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    /* Styling for the "All Blogs" heading */
+    h2 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Styling for the individual blog titles */
+    .title {
+      color: #007bff;
+      margin-bottom: 15px;
+      padding-top: 10px;
+    }
+
+    /* Styling for the blog snippets */
+    .snippet {
+      color: #666;
+      margin-bottom: 25px;
+      /* max-height: 116px; */
+    }
+
+    /* Styling for the "No blogs found" message */
+    p {
+      color: #ff0000;
+      text-align: center;
+    }
+
+p, h1, h2, h3, a, ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+/* nav & footer styles */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav h1 {
+  font-size: 2em;
+  color: #333;
+  font-weight: 700;
+  flex-basis: 100%;
+  order: 1;
+}
+
+nav p, nav a {
+  color: #666;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+footer {
+  background-color: white;
+  color: #666;
+  padding: 20px 0px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+}
+
+.create-blog form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.05);
+  border-radius: 5px;
+}
+
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.create-blog label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+textarea {
+  height: 120px;
+}
+
+.create-blog button {
+  margin-top: 20px;
+  background: blue;  /* Change color here */
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-blog button:hover {
+  background-color: #000080; /* Change color here */
+  transform: scale(1.05);
+}
+
+
+.blogs a {
+  display: block;
+  padding-left: 30px;
+  margin: 49px 1px;
+  border-left: 4px solid gray;
+}
+
+.blogs a:hover {
+  background-color: #aba9a9;
+}
+
+
+.delete:hover{
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.delete {
+  position: relative;
+  top: 0;
+  left: 10px;
+  border-radius: 0%;
+  padding: 8px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.portfolio {
+  color: #007bff;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  nav {
+    padding: 20px 10px;
+  }
+
+  nav h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav li {
+    margin-left: 20px;
+  }
+
+  .create-blog form {
+    padding: 10px;
+  }
+  footer {
+    position: fixed; 
+    width: 100%;
+    z-index: 9999;
+  }
+}
+

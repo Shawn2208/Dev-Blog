@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true })); // middleware for parsing URL-e
 
 
 
-mongoose.connect('mongodb+srv://shawn2208:password@cluster0.i9kflny.mongodb.net/node-tuts', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://shawn2208:password@cluster0.i9kflny.mongodb.net/database name', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(async (result) => {
     let port = process.env.PORT;
     if (port == null || port === '') {
